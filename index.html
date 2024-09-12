@@ -1,1145 +1,162 @@
-<html lang="en">
+<html lang="en"></html>
 <head>
     <meta charset="UTF-8">
-    <link rel ="shirtcut icon" type="x-icon" href="https://i.ibb.co/6vWvL61/nm.jpg">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> OCFN WEB PAGE</title>
-<link rel="stylesheet" href="oc.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=poppins:wgt@400;500;600&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins',sans-serif;
-    box-sizing: border-box;
-}
-:root{
-    --secondary-color:#edf2fc;
-    --primary-color:#212121; 
-   
-}
-.dark-theme{
-    --secondary-color:rgb(8, 8, 8);
-    --primary-color:#edf2fc;
-}
-
-body{
-    background:var(--primary-color);
-    color: var(--secondary-color);
-    
-}
-html{
-    scroll-behavior:smooth;
-}
-#header{
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color:var(--primary-color);
-    
-}
-        
- mark{
-    background:var(--primary-color);
-    color: rgb(252, 4, 4);
-}
-.container{
-    padding: 10px 10px;  
-}
-p,h1{
-    color: var(--secondary-color);
-}
-nav{
-  background-color:var(--secondary-color);
-  color:var(--primary-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-nav ul{
-    margin-left: 48%;
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 10px;
-    text-align: right;
-    background-color:var(--secondary-color); 
-}
-.menu{
-    display: none;
-    cursor: pointer; 
-}
-
-
-nav ul li a {
-    color:var(--primary-color);
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ffe600;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-nav ul li a:hover::after{
-    width: 100%;
-}
-.header-text{
-    margin-top:-28rem;
-    font-size: 30px;
-}
-.header-text P{
-    color:var(--secondary-color);
-    font-size: 3rem;
-    margin-top: -6rem;
-}
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-.header-text h1 span{
-    color: #ff004f;
-}
-/*------about------*/
-#about{
-    padding: 80px 0;
-    color: var(--secondary-color);
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.about-col-1{
-    flex-basis: 35%;
-}
-.about-col-1 img{
-    width: 100%;
-    border-radius: 65rem;
-     
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.5s;
-    -webkit-transition-property:box-shadow, transform;
-    transition-property: box-shadow,transform;
-}
-.about-col-1 img:hover{
-    box-shadow: 0px 10px 1rem 1rem rgb(255, 230, 9);
-   -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-}
-.about-col-2 {
-   flex-basis: 1rem;
-}
-.subtitle{
-    font-size: 60px;
-    font-weight: 600;
-    color: var(--secondary-color);
-}
-.tab-titles{
-    display: flex;
-    margin: 20px 0 20px;
-}
-
-.tab-links{
-    margin-right: 50px ;
-    font-size: 33px;
-    font-weight: 500;
-    cursor: pointer;
-    position:relative;
-    
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #0400ff;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-
-}
-.tab-links.active-link::after{
-    width: 50%;
-}
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-.tab-contents ul li span{
-    color: #b54769;
-    font-size: 28px;
-}
-.tab-contents{
-    display: none;
-    
-}
-.tab-contents.active-tab{
-    display: block;
-}
-/*------services-----*/
-#services{
-    padding: 30px 0;
-}
-
-.services-list{
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-    background:var(--secondary-color);
-    color: var(--primary-color);
-}
-.services-list div{
-    background: rgb(120, 118, 236);
-    padding: 40px;
-    font-size: 29px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-}
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-#services p{
-    font-size: 1.5rem;
-}
-#more{
-    display: none;
-}
-
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    color: var(--secondary-color);
-}
-.services-list div a{
-    text-decoration: none;
-    color: yellow;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    display: inline-block;
-}
-.services-list div:hover{
-background: #ff004f;
-transform: translateY(-10px);
-}
-/*----Plants-----*/
-.plant{
-    float: left;
-    width: 33.33%;
-    padding: 8px;
-    
-}
-.plants::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-#plants h1{
-    margin-left: 1rem;
-    font-size: 4rem;
-}
-#plants img{
-    width: 27rem;
-    padding: 40px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property:box-shadow, transform;
-    transition-property: box-shadow,transform;
-}
-#plants p, .bx{
-    font-size: 2rem;
-}
-#more2{
-    display: none;
-}
-#myBtn2{
-    margin:  2px 40%;
-    cursor: pointer;
-    width: 9rem;
-    border-radius: 2rem;
-    border: none;
-    background-color: #fff;
-    border-color: navajowhite;
-    font-size: 1.5rem;
-    display: inline-block;
-    border: none;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    cursor: pointer;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property:box-shadow, transform;
-    transition-property: box-shadow,transform;
-}
-#myBtn2:hover,#myBtn:focus,.myBtn:active{
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-   -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-}
-/*-- gallery--*/
-#gallery
-{
-    margin-top: 2rem;
-}
-#gallery h1{
-margin-left: 1rem;
-font-size: 4rem;
-}
-.column{
-    float: left;
-    width: 33.33%;
-    padding: 8px;
-    
-}
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.column img{
-    width: 26rem;
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property:box-shadow, transform;
-    transition-property: box-shadow,transform;
-} 
-.column img:hover,.column img:focus,.column img:active{
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-   -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-}
-#more1{
-    display: none;
-}
-#myBtn1{
-    width: 10rem;
-    margin: 2rem 40%;
-    background-color: #fff;
-    border-color: navajowhite;
-    font-size: 1.5rem;
-    display: inline-block;
-    border: none;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    cursor: pointer;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.5s;
-    -webkit-transition-property:box-shadow, transform;
-    transition-property: box-shadow,transform;
-}
-#myBtn1:hover ,#myBtn:focus,.myBtn:active{
-   box-shadow: 0 0 20px rgba(0,0,0,0.5);
-   -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-}
-/*------why-----*/
-
-.why{
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-    background-image: url(named.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--primary-color);
-}
-.why div{
-    background:var(--secondary-color);
-    padding: 40px;
-    font-size: 29px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-}
-.why div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-  
-.why h1{
-    color: rgb(4, 0, 255);
-}
-.why .heaven,.closer,.peace,.study{
-border-style:double;
-}
-
-.why p{
-    font-size: 1.5rem;
-    color: var(--primary-color);
-}
-
-
-.why div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    color:rgb(0, 247, 255);
-}
-.why div a{
-    text-decoration: none;
-    color: yellow;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-/*-----CONTACT----*/
-#contact{
-    margin-top: 1rem;
-}
-.contact-left{
-    flex-basis: 35%;
-}
-.sub-title{
-    font-size: 5rem;
-}
-.contact-right{
-    flex-basis:60%;
-}
-.contact-left p{
-     margin-top: 30px;
-}
-.contact-left p i{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
-}
-.social-icons{
-    margin-top: 30px;
-}
-.social-icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: var(--secondary-color);
-    display: inline-block;
-    transition: transform 0.5s;
-}
-.social-icons a:hover{
-    
-    transform: translateY(-5px);
-}
-.btn.btn2{
-    display: inline-block;
-    background: #ff004f;
-    margin-top: 10px;
-    text-decoration: none;
-}
-.bxl-facebook:hover{
-    color: #0400ff;
-}
-.bxl-telegram:hover{
-    color: #0084ff;
-}
-.bxl-tiktok:hover{
-    color:rgb(194, 88, 88) ;
-}
-.bxl-twitter:hover{
-    color: #00a2ff;
-}
-.bxl-whatsapp:hover{
-    color: rgb(5, 255, 5);
-}
-.bxl-youtube:hover{
-    color: red;
-}
-.btn{
-    font-size: 1.5rem;
-    
-}
-.contact-right form{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background:var(--secondary-color);
-    padding:15px;
-    margin: 15px 0;
-    color:var(--primary-color);
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2{
-    padding: 14px 60px;
-    margin-top:4rem;
-    font-size: 1rem;
-    cursor: pointer;
-    color: var(--secondary-color);
-}
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: var(--secondary-color);
-    font-weight: 300;
-    margin-top: 50px;
-    
-}
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-    
-}
-#menu1,#menu2{
-    display: none;
-}
-nav #icon{
-    color: var(--primary-color);
-    cursor: pointer;
-    width: 30px;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-}
-
-#open-menu{
-  display: none;  
-}
-
-.header-text span{
-    color: blue;
-}
-/*------------css for small screen-------*/
-@media only screen and (max-width:750px)
-{
-.container {
-  width: 500px;
-  margin-left: 1rem;
-}
-    #header p{
-    color: var(--secondary-color);
-    position: relative;
-    margin-top: 5rem;
-    margin-left: 1rem;
-    font-size: 1.3rem;
-
-   }
-   
-  #menu1 {
-    display: none;
-  }
-
-  #menu2 {
-    display: block;
-  }
-
-
-    nav ul 
-    {
-        background: #141213;
-        position:fixed;
-        top: 0.5rem;
-        right: -200px;
-        width: 200px;
-        height: 60vh;
-        text-align:center;
-        padding-top:50px;
-        z-index: 2;
-    }
-nav ul li{
-    display: block;
-    margin:25px;
-}
-
-nav ul .bx{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    background-color: red;
-    cursor: pointer;
-}
- 
- #menu1 {
-    display:block;
-    font-size: 24px; 
-    cursor: pointer;
-    
-}
-#menu2{
-    display:none;
-    font-size: 24px; 
-    cursor: pointer;
-}
-.sub-title{
-    font-size: 40px;
-}
-
-.about-col-1,.about-col-2{
-    flex-basis: 100%;
-}
-.about-col-1{
-    margin-bottom: 30px;
-    
-}
-.about-col-1 img{
-    
-    border-radius: 25rem;
-    width: 22rem;
-}
-.about-col-2{
-    font-size: 14px;
-}
-
-.tab-links{
-    font-size: 18px;
-    margin-right: 50px;
-    margin: 10px 0px;
-}
- 
-.contact-left,.contact-right{
-    flex-basis: 100%;
-}
-.copyright{
-    font-size: 14px;
-    color:var(--primary-color);
-}
-#msg{
-    color: #61b752;
-    margin-top: -35px;
-    display: block;
-}
-#header{
-    width: 100%;
-    height: 50vh;
-}
-#services{
-margin: -6rem 0;
-}
-.header-text p{
-    margin-top: 20rem;
-    font-size: 1px;
-}
-.layer h3{
-margin-left: 6rem;
-}
-.layer p{
-    margin: -9rem 0;
-}
-#gallery ,#plants{
-    width: calc(100% - 30rem);
-}
-#plants h1{
-    font-size: 40px;
-    margin: 3rem;
-    
-}
-#plants p,.bx-link-external{
-    margin: 0 2rem;
-    
-}
-#myBtn2{
-    margin-left:9rem;
-}
-#myBtn1{
-    margin-top: 52rem;
-    margin-left: 9rem;
-}
-
-    
-    .plant{
-        width:100%; 
-    }
-   
-    .plants{
-        width: 30rem;
-        margin: 1rem 0;
-        width: 15rem;
-    }
-    
-    .row{
-        width:100%;
-    }
-    .column{
-        width:100%;
-        margin:1rem 0;
-        height: 15rem;
-    } 
-    
-
-    .tab-links {
-        margin: 0 9px; /* Adjusted spacing for smaller screens */
-    }
-    #icon{
-    margin-left: 22rem;
-    margin-top: 13px;
-    width:30px;
-    cursor: pointer;
-    color: var(--primary-color);
-    transform: translate(-50%, -50%);
-    }
-#msg{
-    margin-top: 1rem;
-    font-size: 2rem;
-}
-   .btn{
-    margin-left: 6rem;
- }  
-}
-</style>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body>
-    <div class="container">
-    <div id="header">
-       
-        <nav>
-            
-            <ul id="sidemenu">
-                <li><a href="#header">HOME</a></li>
-                <li><a href="#services">ABOUT</a></li>
-                <li><a href="#about">SERVICE</a></li>
-                <li><a href="#plants">OUR PLANTS</a></li>
-                <li><a href="#gallery">GALLERY</a></li>
-                <li><a href="#contact">CONTACT</a></li></ul>
-                <div class="menu">
-                    </div>
-            <i class='bx bx-bible'" id="menu1"></i>
-             <i class='bx bxs-sun' id="icon" class="icon"></i>
+    <!--header design-->
+    <header class="header">
+        <a href="#" class="logo">portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <h1>OROMOO <mark>CHRISTIAN</mark>  FELLOWSHIP NAIROBI</h1>
-        </div>
-       
-        <div class="header-text">
-            
-            <P>...12 Inni warra Waaqayyoof qulqullaa'an, hojii isa itti ergaman sanaaf qopheessuudhaaf, [waldaa isa] dhagna Kristos sanas cimsuudhaaf kana godhe*. 13 Kunis hamma hundumti keenya tokkummaa amantii, ilma Waaqayyoo beekuu namoota ga'an taanee, guddannees safara guutummaa Kristos bira hamma geenyutti ta'a.
+    </header>
 
-               <span>Efesoon 4:12-13</span></P>
+    <!---home section design--->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>HELLO,IT'S ME</h3>
+             <h1>Barecha Etana</h1>
+             <h3>And I'm a <span class="multiple-text"></span></h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sunt ea obcaecati ex? Sequi, suscipit eum deserunt vitae similique in praesentium non
+                 qui eos obcaecati deleniti officiis sint quae id.</p>
+                 <div class="social-media">
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                 </div>
+                 <a href="#" class="btn">download cv</a>
         </div>
-    </div>
-    
-    
-        <div class="container">
-    <div id="about">
-        
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="https://i.ibb.co/6vWvL61/nm.jpg" alt="yes" class="
-                    ml">
-                    
+        <div class="home-img">
+            <img src="image1.png" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+          <img src="image1.png" alt="">  
+        </div>
+        <div class="about-content">
+            <h2 class="heading">
+                About<span> Me</span>
+            </h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Rem ipsam minima, 
+                alias molestias incidunt optio eligendi consequatur, saepe magnam cupiditate dicta vel
+                 quaerat quia sunt magni quae architecto eos enim.
+                </p>
+                <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <!---service sectio  design-->
+    <section class="services" id="services">
+        <h2 class="heading">
+            Our<span> Services</span>
+        </h2>
+        <div class="services-container">
+           <div class="service-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Atque consequuntur dolore suscipit fugiat aliquid similique praesentium. Dolorem, voluptatem aspernatur? 
+                Sapiente repudiandae rerum dignissimos soluta corrupti eaque earum porro vitae dicta!</p>
+                <a href="#" class="btn">Read More </a>
+           </div> 
+           <div class="service-box">
+            <i class='bx bxs-paint'></i>
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Atque consequuntur dolore suscipit fugiat aliquid similique praesentium. Dolorem, voluptatem aspernatur? 
+                Sapiente repudiandae rerum dignissimos soluta corrupti eaque earum porro vitae dicta!</p>
+                <a href="#" class="btn">Read More </a>
+           </div> 
+           <div class="service-box">
+            <i class='bx bxs-bar-chart-alt-2'></i>
+            <h3>Digital Marketing</h3>
+            <p>Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Atque consequuntur dolore suscipit fugiat aliquid similique praesentium. Dolorem, voluptatem aspernatur? 
+                Sapiente repudiandae rerum dignissimos soluta corrupti eaque earum porro vitae dicta!</p>
+                <a href="#" class="btn">Read More </a>
+           </div> 
+        </div>
+    </section>
+    <!---portfolio section design-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">
+            Latest <span>Projects</span>
+        </h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="pro1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
-                
-                
-            
-            
-                <div class="about-col-2">
-                    <!--SERVICE-->
-                    <h1 class="subtitle">SERVICE</h1>
-                    
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('sunday')">SUN</p>
-                        <p class="tab-links"onclick="opentab('monday')">MON</p>
-                        <p class="tab-links"onclick="opentab('tuesday')">TUE</p>
-                        <p class="tab-links"onclick="opentab('wednesday')">WED</p>
-                        <p class="tab-links"onclick="opentab('thursday')">THUR</p>
-                        <p class="tab-links"onclick="opentab('friday')">FRI</p>
-                        <p class="tab-links"onclick="opentab('saturday')">SAT</p>
-                    </div>
-                    
-                        <!--YOU CHANGE IN li down below-->
-
-                        <div class="tab-contents active-tab" id="sunday">
-                            <ul>
-                                <li><span>program </span> <br>Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="monday">
-                            <ul>
-                                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="tuesday">
-                            <ul>
-                                <li><span>program </span> <br>Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="wednesday">
-                            <ul>
-                                <li><span>program  </span> <br>Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="thursday">
-                            <ul>
-                                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="friday">
-                            <ul>
-                                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="saturday">
-                            <ul>
-                                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
-                                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
-                            </ul>
-                        </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="pro1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
-                
-                
-                
             </div>
-        </div>
-    </div>
-
-<!----About us-->
-<div class="container">
-<div id="services">
-    
-        <h1 class="subtitle" id="abi">ABOUT US</h1>
-        <p>
-            The Oromo Christian Fellowship Church in Nairobi (OCFN) was started as a home prayer group by some Ethiopian refugees <br>
-            residing in Kenya in the mid- to late-1980s. 
-            No one imagined it would last 30-plus years, let alone be destined to do such<br> a substantial mission work in the Kingdom of God.<span id="less"></span><span id="more"><br><br>
-            The plight of Oromo refugees who escaped from the tyranny and dictatorship<br> of the Ethiopian government(s) in the last 30-plus years continued and there was a constant increase in the flow of migrants into the neighboring Kenya.<br>
-            It became evident that Oromo Christians needed to come together and worship the Lord in their own language. 
-            Hence it was agreed to start this church as a <br> fellowship to include all different Evangelical Christians.<br><br>
-            Though many Oromo professionals were in Nairobi on job placements such as at the <a href="https://kenya.un.org/en">United Nations,</a><br> as well as in numerous other international organizations, many were not interested in joining this refugee-dominated church to worship the Lord.<br> They feared it would be emotionally and financially draining as well as politically troublesome. With God’s help, a few of us who were sympathetic to this group dedicated ourselves to sacrifice, 
-            standing by these young and desperate Christians to give them a helping hand in negotiating worship space <br>
-            and provide other necessities of church facilitation. </span> 
-
-        </p>
-        <button onclick="myFunction1()" id="myBtn">Read more</button>
-        <div class="services-list">
-
-            <!---you edit or add new features down here -->
-
-            <div class="home">
-                <i class='bx bxs-bible'></i>
-                <h2>PRAY</h2>
-                <p>OCFN Sends Missionaries to the Western World</p>
-                    <a href="link1.html">Learn more</a>
-            </div>
-            <div class="home">
-                <i class='bx bxs-church'></i>
-                <h2>WORSHIP</h2>
-                <p>OCFN Has an Effective Outreach Ministry in North Kenya</p>
-                    <a href="link2.html">Learn more</a>
-            </div>
-            <div class="home">
-                <i class='bx bxs-bible'></i>
-                <h2>LEARNING BIBLE FROM EACH OTHER</h2>
-                <p>OCFN Serves Oromo-Speaking Christians in Urban Nairobi<p>
-                    <a href="link3.html">Learn more</a>
-            </div>
-        </div>
-    </div>
-
-</div>
-<!-----our church plants---->
-<div class="container">
-<div id="plants">
-<h1>OCFN Church plants</h1>
-<div class="row">
-<div class="plant">
-    <img src="https://i.ibb.co/fHWqvxv/member.JPG" alt="check"> 
-    <p>church name</p>
-    <a href="#"><i class='bx bx-link-external'></i></a>
-</div>
-<div class="plant">
-    <img src="https://i.ibb.co/fHWqvxv/member.JPG" alt="check"> 
-    <p>church name</p>
-    <a href="#"><i class='bx bx-link-external'></i></a>
-</div>
-<div class="plant" id="3rd">
-    <img src="https://i.ibb.co/HB6wbLv/member.JPG" alt="check"> 
-    <p>church name</p>
-    <a href="#"><i class='bx bx-link-external'></i></a>
-</div> 
-<span id="less2"></span>
-        <span id="more2">
-            <div class="plant">
-                <img src="https://i.ibb.co/VNLgF72/member.JPG" alt="check"> 
-                <p>church name</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>  
-            <div class="plant">
-                <img src="https://i.ibb.co/4NWpWXD/member.JPG" alt="check"> 
-                <p>church name</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div> 
-            <div class="plant">
-                <img src="https://i.ibb.co/4NWpWXD/member.JPG" alt="check"> 
-                <p>church name</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div> 
-            <div class="plant">
-                <img src="https://i.ibb.co/4NWpWXD/member.JPG" alt="check"> 
-                <p>church name</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div> 
-            </span>
-</div>
-<button onclick="myFunction3()" id="myBtn2"> more </button>
-</div>    
-</div>
-<!----OUR GALLERY-->
-<div class="container">
-<div id="gallery">
-    <h1>OUR GALLERY</h1>
-    <div class="row1">
-        <div class="column"
-        >
-            <img src="https://i.ibb.co/PmrppvT/member.JPG" alt="check"> 
-        </div>
-        <div class="column">
-            <img src="https://i.ibb.co/6H3B8wb/member.JPG" alt="check"> 
-        </div>
-        <div class="column" id="3r">
-            <img src="https://i.ibb.co/4NWpWXD/member.JPG" alt="check"> 
-        </div>
-       
-    </div>
-    <button onclick="myFunction4()" id="myBtn1"></button>
-</div>
-</div>
-<div class="container">
-    <div id="why">
-        <div class="why">
-    <h1>WHY DO WE GO TO CHURCH? </h1>
-    
-    <div>
-        <div class="heaven">
-          <h2>place of heaven</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Sapiente libero asperiores obcaecati,
-          </p>
-        </div>
-        <div class="study">
-            <h2>study bible</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente libero asperiores obcaecati,</p>
-        </div>
-        <div class="peace">
-            <h2>peace of mind</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente libero asperiores obcaecati,</p>
-        </div>
-        <div class="closer">
-            <h2>closer to jesus</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente libero asperiores obcaecati,</p>
-        </div>
-    </div>
-</div>
-    </div>
-</div>
-<!-----contact -->
-<div class="container">
-<div id="contact">
-    
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">contact us</h1>
-                <p><i class='bx bxs-send'></i>ocfn2014@gmail.com</p>
-                <p><i class='bx bxs-phone'></i>0*********</p>
-                <div class="social-icons">
-
-                    <!-- copy and change the app name and user name -->
-
-                    <a href="http://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#"><i class='bx bxl-youtube' ></i></a>
-                    <a href="https://wa.me/ "><i class='bx bxl-whatsapp' ></i></a>
-                    <a href="#/"><i class='bx bxl-telegram' ></i></a>
-                    <a href ="#" ><i class='bx bxl bxl-tiktok' ></i></a>
-                    <a href ="#" ><i class='bx bxl-twitter'></i></a>
+            <div class="portfolio-box">
+                <img src="pro1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
-                <a href="#" class="btn1 btn2">Download </a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name">
-                    <input type="email" name="Email" placeholder="Your Email" >
-                    <textarea name="Message" rows="6" placeholder="Your feedback"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+            <div class="portfolio-box">
+                <img src="pro1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
             </div>
         </div>
-        
+     </section>
+     <!--contact section design-->
+     <section class="contact" id="contact">
+       <h2 class="heading">Contact <span>Me</span></h2>
+
+<form action="#">
+    <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
     </div>
-    <div class="copyright"> © ocfn2024</div>
-</div>
-</div>
-<!---javascript code downbelow-->
-    <script >
-        
-  function toggleMenu() {
-  var menu = document.querySelector('.');
-  menu.classList.toggle('active');
-}
+    <textarea name="" id="" cols="30" rows="10" placeholder="your message!"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+</form>
+</section>
 
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link")
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
-    }
-    event.currentTarget.classList.add("active-link")
-    document.getElementById(tabname).classList.add("active-tab")
-}
-var sidemenu = document.getElementById("sidemenu");
-function openmenu(){
-    sidemenu.style.left = "0";
-}
-function closemenu(){
-    sidemenu.style.left = "-233px";
-    sidemenu.style.top = "-1rem";
-    sidemenu.style.alignItems ="left";
-}
-const scriptURL = ''
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
-
-form.addEventListener('submit', e => {
-e.preventDefault()
-fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-.then(response => {
-msg.innerHTML = "message sent successfully"
-setTimeout(function(){
- msg.innerHTML =""
-},10000)
-form.reset()
-})
-.catch(error => console.error('Error!', error.message))
-})
-
-var icon = document.getElementById('icon');
-icon.onclick = function(){
-document.body.classList.toggle("dark-theme")
-}
-
-
-function myFunction1() {
-  var less = document.getElementById("less");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (less.style.display === "none") {
-    less.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    less.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-    
-    
-      document.getElementById('abi').scrollIntoView({ behavior: 'smooth' });
-  }
-}
-function myFunction2() {
-  var dot = document.getElementById("dot");
-  var moreText = document.getElementById("others");
-  var btnText = document.getElementById("myBtn2");
-
-  if (less.style.display === "none") {
-    less.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dot.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-function myFunction4() {
-    var lessText = document.getElementById("less1");
-    var moreText = document.getElementById("more1");
-    var btnText = document.getElementById("myBtn1");
-
-    if (moreText.style.display === "none") {
-        lessText.style.display = "none";
-        moreText.style.display = "inline";
-        btnText.innerHTML = "See less"; 
-    } else {
-        lessText.style.display ="inline";
-        moreText.style.display = "none";
-        btnText.innerHTML = "See more"; 
-
-        document.getElementById('3r').scrollIntoView({behavior:"smooth"});
-        
-    }
-}
-function myFunction3() {
-    var lessText2 = document.getElementById("less2");
-    var moreText2 = document.getElementById("more2");
-    var btnText2 = document.getElementById("myBtn2");
-
-    
-  
-
-    if (moreText2.style.display === "none" ) {
-        moreText2.style.display = "inline";
-        lessText2.style.display = "none"; 
-        btnText2.innerHTML = " less"; 
-    } else {
-        moreText2.style.display = "none";
-        lessText2.style.display = "inline"; 
-        btnText2.innerHTML = " more"; 
-
-        var plantsElement = document.getElementById('3rd');
-        plantsElement.scrollIntoView({ behavior: 'smooth' });
-        
-
-    }
-
-    
-}
-
-
-    </script>
+<!--footer design-->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy2024</p>
+    </div>
+    <div class="footer-icontop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js.js"></script>
 </body>
 </html>
