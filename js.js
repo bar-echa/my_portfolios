@@ -55,3 +55,22 @@ ScrollReveal({
               backdelay:1000,
               loop: true
       });
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyeEKr6e8WtMq7J9uuCzlYOlQbTTqi3AtsdJFCAwlMo0Ri-rfF-HDC63qaNMx1wOsQZsQ/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+       msg.innerHTML = "Thank you for your feedback!"
+
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+})
+    .catch(error => console.error('Error!', error.message))
+})
