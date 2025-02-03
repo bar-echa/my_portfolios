@@ -56,7 +56,7 @@ ScrollReveal({
               loop: true
       });
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzayiH5_v-rLfzHE-3lt9aER8n71muQvb5Mg1iB2MzRBZvITZSSt6scmv_eqiKD-D-OsA/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw2nL9Zz26wRHAZfpmuh5v35SskEGIDPLYWAf-nGH0O9Z6zd9UpDCau7sJXwE1wVROEeA/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("btn")
 
