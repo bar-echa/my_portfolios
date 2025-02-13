@@ -1,0 +1,1 @@
+This is the repository for my personal portfolio website! This site is a showcase of my skills, projects, and experience, built using modern web technologies. It's a place where you can explore the work I've done and get to know more about how I approach problem-solving and development.
