@@ -102,8 +102,29 @@ span{
     width: 35vw;
     border-radius: 30rem;
 }.home-content p{
-    font-size: 1.6rem;
-}
+   
+      
+        
+          font-family: 'Arial', sans-serif; /* Font style */
+          font-size: 16px; /* Text size */
+          color: #333; /* Text color */
+          line-height: 1.6; /* Line height for readability */
+          background-color: #f4f4f4; /* Light background for contrast */
+          padding: 15px; /* Padding around the text */
+          border-radius: 8px; /* Rounded corners */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+          max-width: 600px; /* Maximum width for better readability */
+          margin: 20px auto; /* Center the paragraph */
+        }
+        p:hover {
+          background-color: #e0e0e0; /* Change background color on hover */
+        }
+    .p span{
+        color: black;
+    }
+    
+    
+
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -355,6 +376,7 @@ font-size: 1.6rem;
 @media (max-width :768px){
     #menu-icon{
         display: block;
+        cursor: pointer;
     }
     .navbar{
         position: absolute;
@@ -362,7 +384,7 @@ font-size: 1.6rem;
         left: 0;
         width: 100%;
         padding: 1rem 3%;
-        background: var(---bg-color);
+        background:rgb(39, 46, 39);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;

@@ -74,3 +74,51 @@ form.addEventListener('submit', e => {
 })
     .catch(error => console.error('Error!', error.message))
 })
+function toggleContent() {
+    var extraContent = document.getElementById("extra-content");
+    var btn = document.querySelector(".btn");
+
+    if (extraContent.style.display === "none") {
+      extraContent.style.display = "inline";
+      btn.textContent = "Read Less";
+    } else {
+      extraContent.style.display = "none";
+      btn.textContent = "Read More";
+    }
+  }
+  function toggleContent1() {
+    var extraContent1 = document.getElementById("extra-content1");
+    var btn = document.querySelector(".btn");
+
+    if (extraContent1.style.display === "none") {
+      extraContent1.style.display = "inline";
+      btn.textContent1 = "Read Less";
+    } else {
+      extraContent1.style.display = "none";
+      btn.textContent1 = "Read More";
+    }
+  }
+  function toggleContent2() {
+    var extraContent2= document.getElementById("extra-content2");
+    var btn = document.querySelector(".btn");
+
+    if (extraContent2.style.display === "none") {
+      extraContent2.style.display = "inline";
+      btn.textContent2 = "Read Less";
+    } else {
+      extraContent2.style.display = "none";
+      btn.textContent2 = "Read More";
+    }
+  }
+  function toggleContent3() {
+    var extraContent3= document.getElementById("extra-content3");
+    var btn = document.querySelector(".btn");
+
+    if (extraContent3.style.display === "none") {
+      extraContent3.style.display = "inline";
+      btn.textContent3 = "Read Less";
+    } else {
+      extraContent3.style.display = "none";
+      btn.textContent3 = "Read More";
+    }
+  }
