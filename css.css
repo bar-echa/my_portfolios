@@ -5,6 +5,7 @@
     text-decoration: none;
     border: none;
     outline: none;
+    text-align: justify;
     scroll-behavior: smooth;
     font-family:'poppins, sans-serif';
 }
