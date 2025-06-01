@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
     box-sizing: border-box;
+    text-align: justify;
 }
 :root{
     --primary-color:#edf2fc;
