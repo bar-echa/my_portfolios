@@ -79,8 +79,11 @@ section{
     50%{
         transform: translateY(-2.4rem);
     }
-    100%{
+    60%{
         transform: translateY(0);
+    }
+    100%{
+        transform: translateY(2.4rem);
     }
 }
 .home-content h3{
@@ -154,6 +157,7 @@ span{
    color: var(---second-bg-color);
    letter-spacing: 1rem;
    font-weight: 600;
+   transition: background-color 3s; 
 }
 .btn:hover{
     box-shadow: none;
