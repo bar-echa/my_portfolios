@@ -74,14 +74,12 @@ section{
 }
 @keyframes floatImage{
     0%{
-        transform: translateY(-2.4rem);
-    }
-    50%{
         transform: translateY(0);
     }
-    60%{
-        transform: translateY(2.4rem);
+    50%{
+        transform: translateY(-2.4);
     }
+    
     100%{
         transform: translateY(0);
     }
