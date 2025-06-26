@@ -75,16 +75,16 @@ section{
 }
 @keyframes floatImage{
     0%{
-        transform: translateY(0);
-    }
-    50%{
         transform: translateY(-2.4rem);
     }
-    60%{
+    50%{
         transform: translateY(0);
     }
-    100%{
+    60%{
         transform: translateY(2.4rem);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
 .home-content h3{
