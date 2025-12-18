@@ -283,9 +283,18 @@ span{
     background:var(--text-color) ;
     border-radius: 50%;
 }
+.portfolio-layer a:hover{
+    background-color:red;
+    box-shadow: 0 0 1rem var(--main-color);
+}
 .portfolio-layer a i{
     font-size: 2rem;
     color: var(---second-bg-color);
+}
+.portfolio-layer .bx-link-external:hover{
+    background: var(--main-color);
+    color: var(---second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
 }
 .contact h2{
     margin-bottom: 3rem;
